@@ -57,6 +57,19 @@
             <x-jet-input-error for="team" class="mt-2" />
 
 
+            <x-jet-label for="role" value="{{__('strings.role')}}" />
+
+            <select name="role" id="role" class="p-2 border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm mt-1 block w-full"
+            wire:model="role" >
+
+                @foreach ($roles as $role)
+                    <option value="{{$role->id}}">{{$role->name}}</option>
+                @endforeach
+            </select>
+                        
+            <x-jet-input-error for="role" class="mt-2" />
+
+
             <x-jet-label for="phone" value="{{__('strings.phone')}}" />
 
             <x-jet-input id="phone"
