@@ -115,7 +115,7 @@
                                 <div class="text-gray-600">
                                     {{ $u->name }}
                                     <br>
-                                    {{$u->getTeam()->name}} - {{ $u->email }}
+                                    {{$u->getTeam()->name}} - {{($roleUser = $u->roles()->first()) != null ? $roleUser->name : 'no role' }} - {{ $u->email }}
                                 </div>
         
                                 <div class="flex items-center">
@@ -142,7 +142,7 @@
                                 <div class="text-gray-600">
                                     {{ $u->name }}
                                     <br>
-                                    {{$u->getTeam()->name}} - {{ $u->email }}
+                                    {{$u->getTeam()->name}} - {{($roleUser = $u->roles()->first()) != null ? $roleUser->name : 'no role' }} - {{ $u->email }}
                                 </div>
         
                                 <div class="flex items-center">
