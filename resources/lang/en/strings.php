@@ -32,5 +32,6 @@ return [
     'users_associated' => 'Users associated with this role',
     'transactions' => 'Transactions',
     'new_user_create' => 'Create a new user',
-    'new_role_create' => 'Create a new role'
+    'new_role_create' => 'Create a new role',
+    'role' => 'Role'
 ];
